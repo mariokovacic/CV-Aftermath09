@@ -1,0 +1,506 @@
+* {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+title {
+  display: none;
+}
+
+script {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#clickANDdrag {
+  position: absolute;
+  top: -10%;
+  letter-spacing: 9px;
+  animation: glitch 12s linear infinite;
+}
+
+#database {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  top: 1%;
+  background: transparent;
+  font-family: "Orbitron", sans-serif;
+  animation: glitch 9s linear infinite;
+}
+
+#databasenull {
+  margin-right: 320px;
+}
+
+h2 {
+  margin: 3px 9px 3px 45px;
+  letter-spacing: 9px;
+  font-size: 18px;
+}
+
+.moveTitle {
+  opacity: 0;
+  transition: 3s;
+}
+
+h1::before {
+  clip-path: polygon(0 0, 100% 0, 100% 28%, 0 27%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 28%, 0 27%);
+  animation: glitchGore 1s linear infinite;
+  position: absolute;
+  left: 0;
+}
+
+h1::after {
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  animation: glitchDolje 1.5s linear infinite;
+  position: absolute;
+  left: 0;
+}
+
+h1 {
+  margin: 0;
+  position: absolute;
+  z-index: 3;
+  top: 31%;
+  font-family: "Orbitron", sans-serif;
+  font-size: 190px;
+  letter-spacing: 9px;
+  color: rgb(0, 0, 0);
+  animation: glitch 1s linear infinite;
+}
+
+h1::before,
+h1::after {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.aftermath {
+  font-size: 27px;
+}
+
+#timeline {
+  font-family: "Orbitron", sans-serif;
+  position: absolute;
+  font-size: 18px;
+  border-left: 0.5px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 45%;
+  left: 1%;
+  z-index: 3;
+  background: transparent;
+}
+
+#timelineSlide {
+  font-family: "Orbitron", sans-serif;
+  position: absolute;
+  font-size: 18px;
+  border-left: 0.5px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  background: transparent;
+  left: 1%;
+  top: 45%;
+  z-index: 3;
+  width: auto;
+  animation: transformIT 0.5s ease;
+}
+
+.changeTimeline {
+  background: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+h4:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+h4 {
+  margin: 3px;
+  margin-left: 15px;
+  font-size: 15px;
+}
+
+.borderAnimation {
+  border-right: 2px solid black;
+  height: 1px;
+  width: 50px;
+  position: absolute;
+  animation: scrollLeft 2s infinite;
+}
+
+#borderAnimationFile01 {
+  border-bottom: 2px solid black;
+  width: 20px;
+  position: absolute;
+  top: 70%;
+  left: 85%;
+  animation: scrollLeft 2s infinite;
+}
+
+#intro0section {
+  height: auto;
+  width: auto;
+}
+
+#file01section {
+  width: 60%;
+  margin: 0;
+  position: absolute;
+  z-index: 3;
+  top: 31%;
+}
+
+#file02section {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#file03section {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#backX1 {
+  margin-left: 510px;
+  margin-bottom: 30px;
+  border: solid 1px black;
+  width: 20px;
+  animation: goBack2 0.5s forwards;
+  position: absolute;
+}
+
+#backX2 {
+  margin-left: 511px;
+  margin-bottom: 30px;
+  border: solid 1px black;
+  width: 20px;
+  animation: goBack1 0.5s forwards;
+  position: absolute;
+}
+
+#svg1 {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  height: auto;
+}
+
+#svg2 {
+  position: absolute;
+  bottom: 60%;
+  width: auto;
+  height: auto;
+}
+
+path {
+  opacity: 1;
+  animation: losePath 3s linear infinite;
+  stroke-dasharray: 650;
+}
+
+#podaci {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: auto;
+  margin-top: 140px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#podaciMain {
+  margin-bottom: 50px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 0.5px solid black;
+  border-radius: 9px;
+  border-width: 30%;
+  height: auto;
+  padding: 60px;
+  width: 400px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 15px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.item:first-of-type {
+  animation: showFiles 0.1s linear;
+}
+
+.item:nth-of-type(2) {
+  animation: showFiles 0.3s linear;
+}
+
+.item:nth-of-type(3) {
+  animation: showFiles 0.6s linear;
+}
+
+.item:nth-of-type(4) {
+  animation: showFiles 1.2s linear;
+}
+
+.item:nth-of-type(5) {
+  animation: showFiles 1.8s linear;
+}
+
+.item:nth-of-type(6) {
+  animation: showFiles 2.1s linear;
+}
+
+.item:nth-of-type(7) {
+  animation: showFiles 2.4s linear;
+}
+
+.item:nth-of-type(8) {
+  animation: showFiles 2.7s linear;
+}
+
+.item:nth-of-type(9) {
+  animation: showFiles 3s linear;
+}
+
+.item:nth-of-type(10) {
+  animation: showFiles 3.9s linear;
+}
+
+.item:hover {
+  background-color: rgba(251, 252, 252, 0.769);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.educationStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 900px;
+  height: 400px;
+  margin-top: 140px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+  perspective: 500px;
+}
+
+#files {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Orbitron", sans-serif;
+}
+
+h2 {
+  font-family: "Orbitron", sans-serif;
+}
+
+#educationDATA {
+  animation: podaci 0.1s forwards;
+}
+
+.goDown {
+  animation: goDown 4s forwards;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+@keyframes glitchGore {
+  64% {
+    transform: translate(2px, -2px);
+  }
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+@keyframes glitchDolje {
+  2%, 64% {
+    transform: translate(-10px, 0);
+  }
+  4%, 60% {
+    transform: translate(-20px, 0);
+  }
+  62% {
+    transform: translate(-122px, 5px) skew(36deg);
+  }
+}
+@keyframes glitch {
+  2%, 64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%, 60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(27deg);
+  }
+}
+#intro0 {
+  animation: transformIT 0.55s forwards;
+}
+
+#file01 {
+  animation: transformIT 0.6s forwards;
+}
+
+#file02 {
+  animation: transformIT 0.65s forwards;
+}
+
+#file03 {
+  animation: transformIT 0.7s forwards;
+}
+
+#file04 {
+  animation: transformIT 0.75s forwards;
+}
+
+#file05 {
+  animation: transformIT 0.8s forwards;
+}
+
+#file06 {
+  animation: transformIT 0.85s forwards;
+}
+
+#file07 {
+  animation: transformIT 0.9s forwards;
+}
+
+#file08 {
+  animation: transformIT 0.95s forwards;
+}
+
+#file09 {
+  animation: transformIT 1s forwards;
+}
+
+@keyframes transformIT {
+  from {
+    margin-left: -10px;
+    height: 0%;
+  }
+  to {
+    margin-left: none;
+    height: auto;
+  }
+}
+@keyframes transformITback {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes scrollLeft {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 27%;
+  }
+}
+@keyframes goBack1 {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: rotateZ(40deg);
+  }
+}
+@keyframes goBack2 {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: rotateZ(-40deg);
+  }
+}
+@keyframes losePath {
+  to {
+    stroke-dashoffset: 1300;
+  }
+}
+@keyframes goDown {
+  100% {
+    transform: translate(0, 3296px);
+  }
+}
+@keyframes podaci {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    transform: translate(0, 0) skew(0.3deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showFiles {
+  0% {
+    opacity: 0.5;
+    transform: translate(-90px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}/*# sourceMappingURL=style.css.map */

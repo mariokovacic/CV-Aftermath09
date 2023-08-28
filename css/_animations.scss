@@ -1,0 +1,308 @@
+@keyframes glitchGore {
+
+    64% {
+        transform: translate(2px, -2px);
+    }
+
+
+    60% {
+        transform: translate(-2px, 2px);
+    }
+
+    62% {
+        transform: translate(13px, -1px) skew(-13deg);
+    }
+
+
+}
+
+@keyframes glitchDolje {
+
+
+    2%,
+    64% {
+        transform: translate(-10px, 0);
+    }
+
+    4%,
+    60% {
+        transform: translate(-20px, 0);
+    }
+
+    62% {
+        transform: translate(-122px, 5px) skew(36deg);
+    }
+
+
+}
+
+@keyframes glitch {
+
+    2%,
+    64% {
+        transform: translate(2px, 0) skew(0deg);
+    }
+
+    4%,
+    60% {
+        transform: translate(-2px, 0) skew(0deg);
+    }
+
+    62% {
+        transform: translate(0, 0) skew(27deg);
+    }
+
+}
+
+
+// element animaton H4
+#intro0 {
+
+
+    animation: transformIT 0.55s forwards;
+
+}
+
+#file01 {
+
+
+    animation: transformIT 0.60s forwards;
+
+}
+
+#file02 {
+
+
+    animation: transformIT 0.65s forwards;
+
+}
+
+#file03 {
+
+    animation: transformIT 0.70s forwards;
+
+}
+
+
+#file04 {
+
+
+    animation: transformIT 0.75s forwards;
+
+}
+
+#file05 {
+
+
+    animation: transformIT 0.80s forwards;
+
+}
+
+#file06 {
+
+
+    animation: transformIT 0.85s forwards;
+
+}
+
+#file07 {
+
+
+    animation: transformIT 0.90s forwards;
+
+}
+
+#file08 {
+
+
+    animation: transformIT 0.95s forwards;
+
+}
+
+#file09 {
+
+
+    animation: transformIT 1s forwards;
+
+}
+
+@keyframes transformIT {
+
+    from {
+
+        margin-left: -10px;
+
+        height: 0%;
+
+    }
+
+    to {
+        margin-left: none;
+
+        height: auto;
+    }
+
+}
+
+@keyframes transformITback {
+
+    from {
+        opacity: 1;
+
+    }
+
+    to {
+        opacity: 0;
+    }
+
+}
+
+// SCROLLDOWN ELEMENT
+
+@keyframes scrollLeft {
+
+    from {
+
+        width: 0%;
+
+    }
+
+    to {
+
+        width: 27%;
+
+    }
+
+
+}
+
+// GO BACK OPTION --- X X 
+
+
+@keyframes goBack1 {
+
+    0% {
+
+        transform: translateY(0);
+        opacity: 0;
+
+    }
+
+    100% {
+
+
+        opacity: 1;
+        transform: rotateZ(40deg)
+    }
+
+}
+
+
+
+@keyframes goBack2 {
+
+    0% {
+
+        transform: translateY(0);
+        opacity: 0;
+
+    }
+
+
+    100% {
+
+        opacity: 1;
+        transform: rotateZ(-40deg);
+
+    }
+
+}
+
+// ----------------SVG ----------
+
+// main
+@keyframes losePath {
+
+
+    to {
+        stroke-dashoffset: 1300;
+    }
+}
+
+// after
+
+
+@keyframes goDown {
+
+    0% {
+
+
+        // opacity: 0.5;
+
+
+    }
+
+
+    100% {
+
+
+        transform: translate(0, 3296px);
+
+    }
+
+}
+
+// podaci
+
+@keyframes podaci {
+
+    0% {
+
+
+        opacity: 0;
+
+    }
+
+    50% {
+
+
+        transform: translate(0, 0) skew(0.3deg);
+
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+
+    }
+
+}
+
+// --------- FILES ON CLICK SHOW ---------------
+
+@keyframes showFiles {
+
+
+    0% {
+
+
+        opacity: 0.5;
+        transform: translate(-90px);
+
+    }
+
+
+
+    100% {
+
+        opacity: 1;
+        transform: translate(0);
+    }
+
+
+
+
+
+}
